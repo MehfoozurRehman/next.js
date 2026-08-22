@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "build-rust": "rustc --target wasm32-unknown-unknown -O --crate-type=cdylib src/add.rs -o add.wasm",
-    "start": "next start"
+    "dev": "node init && next",
+    "build": "node init && next build",
+    "build-rust": "node init && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib src/add.rs -o add.wasm",
+    "start": "node init && next start"
   },
   "dependencies": {
     "next": "latest",

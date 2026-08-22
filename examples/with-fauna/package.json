@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "yarn setup && next build",
-    "start": "next start",
+    "dev": "node init && next",
+    "build": "node init && yarn setup && next build",
+    "start": "node init && next start",
     "setup": "node ./scripts/setup.js"
   },
   "dependencies": {

@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "dev": "next dev",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "start": "node init && next start",
     "install:payload": "next-payload install",
-    "build:next": "next build",
-    "build": "yarn build:next",
+    "build:next": "node init && next build",
+    "build": "node init && yarn build:next",
     "generate:types": "cross-env PAYLOAD_CONFIG_PATH=payload/payload.config.ts payload generate:types",
     "generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=payload/payload.config.ts payload generate:graphQLSchema"
   },

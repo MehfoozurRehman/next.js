@@ -71,19 +71,19 @@
     "yaml-loader": "^0.8.0"
   },
   "scripts": {
-    "dev": "npm run next:dev",
-    "start": "npm run next:start",
+    "dev": "node init && npm run next:dev",
+    "start": "node init && npm run next:start",
     "jss": "jss",
     "lint": "eslint ./src/**/*.tsx ./src/**/*.ts ./scripts/**/*.ts",
     "bootstrap": "ts-node --project tsconfig.scripts.json scripts/bootstrap.ts",
-    "build": "npm-run-all --serial bootstrap next:build",
+    "build": "node init && npm-run-all --serial bootstrap next:build",
     "graphql:update": "ts-node --project tsconfig.scripts.json ./scripts/fetch-graphql-introspection-data.ts",
     "next:build": "next build",
     "next:dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "next:start": "next start",
     "scaffold": "ts-node --project tsconfig.scripts.json scripts/scaffold-component.ts",
-    "start:connected": "npm-run-all --serial bootstrap --parallel next:dev start:watch-components",
-    "start:production": "npm-run-all --serial bootstrap next:build next:start",
-    "start:watch-components": "ts-node --project tsconfig.scripts.json scripts/generate-component-factory.ts --watch"
+    "start:connected": "node init && npm-run-all --serial bootstrap --parallel next:dev start:watch-components",
+    "start:production": "node init && npm-run-all --serial bootstrap next:build next:start",
+    "start:watch-components": "node init && ts-node --project tsconfig.scripts.json scripts/generate-component-factory.ts --watch"
   }
 }
