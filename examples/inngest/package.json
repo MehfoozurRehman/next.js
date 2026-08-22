@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm:dev:*\"",
-    "dev:next": "next dev",
-    "dev:inngest": "npx inngest-cli@latest dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node init && concurrently \"npm:dev:*\"",
+    "dev:next": "node init && next dev",
+    "dev:inngest": "node init && npx inngest-cli@latest dev",
+    "build": "node init && next build",
+    "start": "node init && next start"
   },
   "dependencies": {
     "inngest": "latest",

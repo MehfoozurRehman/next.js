@@ -21,11 +21,11 @@
     "dist"
   ],
   "scripts": {
-    "dev": "ncc build ./index.ts -w -o dist/",
+    "dev": "node init && ncc build ./index.ts -w -o dist/",
     "prerelease": "node ../../scripts/rm.mjs dist",
     "types": "tsc index.ts --declaration --emitDeclarationOnly --declarationDir dist --esModuleInterop",
     "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
-    "build": "pnpm release && pnpm types",
+    "build": "node init && pnpm release && pnpm types",
     "prepublishOnly": "cd ../../ && turbo run build"
   },
   "devDependencies": {

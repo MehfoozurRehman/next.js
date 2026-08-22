@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next -p 1234",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node init && next -p 1234",
+    "build": "node init && next build",
+    "start": "node init && next start"
   },
   "dependencies": {
     "next": "latest",

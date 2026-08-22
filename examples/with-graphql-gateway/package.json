@@ -2,11 +2,11 @@
   "private": true,
   "scripts": {
     "prestart": "yarn build:mesh",
-    "start": "next dev",
+    "start": "node init && next dev",
     "prebuild": "yarn build:mesh",
-    "build": "next build",
-    "start:prod": "next start",
-    "build:mesh": "mesh build"
+    "build": "node init && next build",
+    "start:prod": "node init && next start",
+    "build:mesh": "node init && mesh build"
   },
   "dependencies": {
     "@graphql-mesh/cli": "0.68.1",

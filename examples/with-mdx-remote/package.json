@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "dev:watch": "next-remote-watch ./posts",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node init && next",
+    "dev:watch": "node init && next-remote-watch ./posts",
+    "build": "node init && next build",
+    "start": "node init && next start"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
