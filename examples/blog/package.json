@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "node ./scripts/gen-rss.js && next build",
-    "start": "next start"
+    "dev": "node init && next",
+    "build": "node init && node ./scripts/gen-rss.js && next build",
+    "start": "node init && next start"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

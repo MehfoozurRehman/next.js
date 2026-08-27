@@ -1,14 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "type-check": "tsc",
-    "build:worker": "tsc --build temporal/tsconfig.json",
-    "build:worker.watch": "tsc --build --watch temporal/tsconfig.json",
-    "start:worker": "cross-env TS_NODE_PROJECT=\"temporal/tsconfig.json\" node --loader ts-node/esm temporal/src/worker.ts",
-    "start:worker.watch": "cross-env TS_NODE_PROJECT=\"temporal/tsconfig.json\" nodemon temporal/src/worker.ts"
+    "build:worker": "node init && tsc --build temporal/tsconfig.json",
+    "build:worker.watch": "node init && tsc --build --watch temporal/tsconfig.json",
+    "start:worker": "node init && cross-env TS_NODE_PROJECT=\"temporal/tsconfig.json\" node --loader ts-node/esm temporal/src/worker.ts",
+    "start:worker.watch": "node init && cross-env TS_NODE_PROJECT=\"temporal/tsconfig.json\" nodemon temporal/src/worker.ts"
   },
   "dependencies": {
     "next": "latest",

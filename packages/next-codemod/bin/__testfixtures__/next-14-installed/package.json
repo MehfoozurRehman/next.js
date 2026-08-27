@@ -1,7 +1,7 @@
 {
   "name": "next-14-installed",
   "scripts": {
-    "dev": "next dev"
+    "dev": "node init && next dev"
   },
   "dependencies": {
     "next": "14.3.0-canary.44",

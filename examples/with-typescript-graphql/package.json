@@ -2,10 +2,10 @@
   "private": true,
   "scripts": {
     "codegen": "graphql-codegen -w",
-    "dev": "yarn graphql-codegen && next",
-    "build": "yarn graphql-codegen && next build",
+    "dev": "node init && yarn graphql-codegen && next",
+    "build": "node init && yarn graphql-codegen && next build",
     "test": "yarn graphql-codegen && jest",
-    "start": "next start"
+    "start": "node init && next start"
   },
   "dependencies": {
     "@apollo/client": "^3.5.10",

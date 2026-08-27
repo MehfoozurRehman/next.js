@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "dev": "node init && next",
+    "build": "node init && next build",
     "flow": "flow",
-    "start": "next start"
+    "start": "node init && next start"
   },
   "dependencies": {
     "next": "latest",

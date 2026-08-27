@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev-turbopack": "next dev --turbopack",
-    "dev-webpack": "next dev --webpack",
-    "build-turbopack": "next build --turbopack",
-    "build-webpack": "next build --webpack",
-    "start-turbopack": "next start",
-    "start-webpack": "next start",
-    "build-application": "next build",
-    "start-application": "next start"
+    "dev-turbopack": "node init && next dev --turbopack",
+    "dev-webpack": "node init && next dev --webpack",
+    "build-turbopack": "node init && next build --turbopack",
+    "build-webpack": "node init && next build --webpack",
+    "start-turbopack": "node init && next start",
+    "start-webpack": "node init && next start",
+    "build-application": "node init && next build",
+    "start-application": "node init && next start"
   },
   "dependencies": {
     "@mantine/core": "^7.10.1",

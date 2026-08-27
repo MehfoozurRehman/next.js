@@ -2,9 +2,9 @@
   "private": true,
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node init && next",
+    "build": "node init && next build",
+    "start": "node init && next start"
   },
   "dependencies": {
     "next": "latest",

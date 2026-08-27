@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm:dev:*\"",
-    "dev:next": "next dev --turbo",
-    "dev:inngest": "inngest-cli dev --no-discovery -u http://localhost:3000/api/inngest",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node init && concurrently \"npm:dev:*\"",
+    "dev:next": "node init && next dev --turbo",
+    "dev:inngest": "node init && inngest-cli dev --no-discovery -u http://localhost:3000/api/inngest",
+    "build": "node init && next build",
+    "start": "node init && next start"
   },
   "dependencies": {
     "inngest": "3.x",

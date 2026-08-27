@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "pnpm i && pnpm run --dir apps/web build",
-    "start": "pnpm run --dir apps/web start",
-    "dev": "pnpm i && pnpm run --dir apps/web dev"
+    "build": "node init && pnpm i && pnpm run --dir apps/web build",
+    "start": "node init && pnpm run --dir apps/web start",
+    "dev": "node init && pnpm i && pnpm run --dir apps/web dev"
   }
 }

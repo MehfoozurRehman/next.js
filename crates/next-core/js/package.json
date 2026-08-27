@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "build": "pnpm check",
+    "build": "node init && pnpm check",
     "check": "tsc --noEmit"
   },
   "dependencies": {

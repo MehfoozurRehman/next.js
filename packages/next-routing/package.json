@@ -1,6 +1,6 @@
 {
   "name": "@next/routing",
-  "version": "16.4.0-canary.8",
+  "version": "16.4.0-canary.9",
   "keywords": [
     "react",
     "next",
@@ -21,11 +21,11 @@
     "dist"
   ],
   "scripts": {
-    "dev": "ncc build ./src/index.ts -w -o dist/",
+    "dev": "node init && ncc build ./src/index.ts -w -o dist/",
     "prerelease": "node ../../scripts/rm.mjs dist",
     "types": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
     "release": "ncc build ./src/index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
-    "build": "pnpm release && pnpm types",
+    "build": "node init && pnpm release && pnpm types",
     "test": "jest",
     "test:watch": "jest --watch"
   },

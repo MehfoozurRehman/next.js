@@ -1,7 +1,7 @@
 {
   "name": "suggest-turbopack",
   "scripts": {
-    "dev": "next dev"
+    "dev": "node init && next dev"
   },
   "dependencies": {
     "next": "15.0.0-canary.0",

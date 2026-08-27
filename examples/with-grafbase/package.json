@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node init && next dev",
     "backend": "npx grafbase@latest dev & yarn codegen",
-    "build": "next build",
-    "start": "next start",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "codegen": "graphql-codegen --watch -r dotenv/config"
   },
   "dependencies": {

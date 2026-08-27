@@ -23,8 +23,8 @@
     "lib"
   ],
   "scripts": {
-    "build": "pnpm run --filter @next/rspack-binding build",
-    "build:debug": "pnpm run --filter @next/rspack-binding build:debug",
+    "build": "node init && pnpm run --filter @next/rspack-binding build",
+    "build:debug": "node init && pnpm run --filter @next/rspack-binding build:debug",
     "change-npm-name": "node ./change-npm-name.js"
   },
   "dependencies": {
