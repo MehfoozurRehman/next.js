@@ -9,7 +9,7 @@
     "next-minimal-server": "workspace:*"
   },
   "scripts": {
-    "build-application": "next build",
-    "start": "next-minimal-server"
+    "build-application": "node init && next build",
+    "start": "node init && next-minimal-server"
   }
 }

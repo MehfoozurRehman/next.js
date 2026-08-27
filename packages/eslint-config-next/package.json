@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-next",
-  "version": "16.4.0-canary.8",
+  "version": "16.4.0-canary.9",
   "description": "ESLint configuration used by Next.js.",
   "license": "MIT",
   "repository": {
@@ -12,7 +12,7 @@
     "dist"
   ],
   "dependencies": {
-    "@next/eslint-plugin-next": "16.4.0-canary.8",
+    "@next/eslint-plugin-next": "16.4.0-canary.9",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-import": "^2.32.0",
@@ -37,8 +37,8 @@
     "typescript": "6.0.2"
   },
   "scripts": {
-    "dev": "pnpm build",
-    "build": "swc -d dist src && pnpm types",
+    "dev": "node init && pnpm build",
+    "build": "node init && swc -d dist src && pnpm types",
     "types": "tsc --skipLibCheck --declaration --emitDeclarationOnly --esModuleInterop --declarationDir dist --rootDir src",
     "pack-for-isolated-tests": "pnpm pack --out ./packed.tgz"
   },

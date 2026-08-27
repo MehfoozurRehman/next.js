@@ -1,6 +1,6 @@
 {
   "name": "@next/env",
-  "version": "16.4.0-canary.8",
+  "version": "16.4.0-canary.9",
   "keywords": [
     "react",
     "next",
@@ -21,11 +21,11 @@
     "dist"
   ],
   "scripts": {
-    "dev": "ncc build ./index.ts -w -o dist/",
+    "dev": "node init && ncc build ./index.ts -w -o dist/",
     "prebuild:source": "node ../../scripts/rm.mjs dist",
     "types": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
-    "build:source": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
-    "build": "pnpm build:source && pnpm types",
+    "build:source": "node init && ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
+    "build": "node init && pnpm build:source && pnpm types",
     "pack-for-isolated-tests": "pnpm pack --out ./packed.tgz"
   },
   "devDependencies": {

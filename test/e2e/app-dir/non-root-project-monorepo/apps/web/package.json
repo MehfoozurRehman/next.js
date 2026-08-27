@@ -5,8 +5,8 @@
     "my-package": "workspace:*"
   },
   "scripts": {
-    "dev": "next dev",
-    "start": "next start",
-    "build": "next build"
+    "dev": "node init && next dev",
+    "start": "node init && next start",
+    "build": "node init && next build"
   }
 }

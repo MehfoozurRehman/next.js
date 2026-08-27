@@ -1,6 +1,6 @@
 {
   "name": "next",
-  "version": "16.4.0-canary.8",
+  "version": "16.4.0-canary.9",
   "description": "The React Framework",
   "main": "./dist/server/next.js",
   "license": "MIT",
@@ -81,13 +81,13 @@
     "next": "./dist/bin/next"
   },
   "scripts": {
-    "dev": "cross-env NEXT_SERVER_NO_MANGLE=1 taskr",
-    "build": "taskr release",
+    "dev": "node init && cross-env NEXT_SERVER_NO_MANGLE=1 taskr",
+    "build": "node init && taskr release",
     "types": "tsc --project tsconfig.build.json --declaration --emitDeclarationOnly --stripInternal --declarationDir dist",
     "typescript": "tsec --noEmit",
     "ncc-compiled": "taskr ncc",
     "storybook": "BROWSER=none storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "node init && storybook build",
     "test-storybook": "test-storybook",
     "pack-for-isolated-tests": "pnpm pack --out ./packed.tgz"
   },
@@ -100,7 +100,7 @@
     ]
   },
   "dependencies": {
-    "@next/env": "16.4.0-canary.8",
+    "@next/env": "16.4.0-canary.9",
     "@swc/helpers": "0.5.23",
     "baseline-browser-mapping": "^2.9.19",
     "caniuse-lite": "^1.0.30001579",
@@ -164,11 +164,11 @@
     "@modelcontextprotocol/sdk": "1.18.1",
     "@mswjs/interceptors": "0.42.0",
     "@napi-rs/triples": "1.2.0",
-    "@next/font": "16.4.0-canary.8",
-    "@next/polyfill-module": "16.4.0-canary.8",
-    "@next/polyfill-nomodule": "16.4.0-canary.8",
-    "@next/react-refresh-utils": "16.4.0-canary.8",
-    "@next/swc": "16.4.0-canary.8",
+    "@next/font": "16.4.0-canary.9",
+    "@next/polyfill-module": "16.4.0-canary.9",
+    "@next/polyfill-nomodule": "16.4.0-canary.9",
+    "@next/react-refresh-utils": "16.4.0-canary.9",
+    "@next/swc": "16.4.0-canary.9",
     "@opentelemetry/api": "1.6.0",
     "@playwright/test": "1.61.0",
     "@rspack/core": "1.6.7",

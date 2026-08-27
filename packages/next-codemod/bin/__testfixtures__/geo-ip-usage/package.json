@@ -1,7 +1,7 @@
 {
   "name": "geo-ip-usage",
   "scripts": {
-    "dev": "next dev --turbo"
+    "dev": "node init && next dev --turbo"
   },
   "dependencies": {
     "next": "15.0.0-canary.152",

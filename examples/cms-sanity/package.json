@@ -2,10 +2,10 @@
   "private": true,
   "scripts": {
     "predev": "npm run typegen",
-    "dev": "next --turbo",
+    "dev": "node init && next --turbo",
     "prebuild": "npm run typegen",
-    "build": "next build",
-    "start": "next start",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "eslint .",
     "presetup": "echo 'about to setup env variables, follow the guide here: https://github.com/vercel/next.js/tree/canary/examples/cms-sanity#using-the-sanity-cli'",
     "setup": "npx sanity@latest init --env .env.local",

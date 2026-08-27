@@ -2,9 +2,9 @@
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "expo start",
+    "dev": "node init && next",
+    "build": "node init && next build",
+    "start": "node init && expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "next",

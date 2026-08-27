@@ -1,7 +1,7 @@
 {
   "name": "pnpm-v11-overrides",
   "scripts": {
-    "dev": "next dev"
+    "dev": "node init && next dev"
   },
   "packageManager": "pnpm@11.5.3",
   "dependencies": {

