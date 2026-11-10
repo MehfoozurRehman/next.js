@@ -23,8 +23,8 @@
     "index.d.ts"
   ],
   "scripts": {
-    "build": "node init && napi build --platform --release",
-    "build:debug": "node init && napi build --platform"
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform"
   },
   "devDependencies": {
     "@napi-rs/cli": "3.1.5",

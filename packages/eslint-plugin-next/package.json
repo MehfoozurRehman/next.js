@@ -22,8 +22,8 @@
     "eslint": "9.37.0"
   },
   "scripts": {
-    "dev": "node init && pnpm build",
-    "build": "node init && swc -d dist src && pnpm types",
+    "dev": "pnpm build",
+    "build": "swc -d dist src && pnpm types",
     "types": "tsc --project tsconfig.json --skipLibCheck --declaration --emitDeclarationOnly --esModuleInterop --declarationDir dist"
   }
 }

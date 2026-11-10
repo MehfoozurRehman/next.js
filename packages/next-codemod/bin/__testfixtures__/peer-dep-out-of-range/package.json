@@ -1,7 +1,7 @@
 {
   "name": "peer-dep-out-of-range",
   "scripts": {
-    "dev": "node init && next dev --turbopack"
+    "dev": "next dev --turbopack"
   },
   "dependencies": {
     "next": "15.0.0-canary.0",

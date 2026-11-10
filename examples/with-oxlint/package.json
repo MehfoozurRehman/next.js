@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "node init && next dev --turbopack",
-    "build": "node init && oxlint --type-aware && next build",
-    "start": "node init && next start",
+    "dev": "next dev --turbopack",
+    "build": "oxlint --type-aware && next build",
+    "start": "next start",
     "lint": "oxlint --type-aware"
   },
   "dependencies": {

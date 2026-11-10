@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "node init && next --turbo",
-    "build": "node init && next build",
-    "start": "node init && next start"
+    "dev": "next --turbo",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "next": "latest",

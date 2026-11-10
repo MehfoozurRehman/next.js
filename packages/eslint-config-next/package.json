@@ -37,8 +37,8 @@
     "typescript": "6.0.2"
   },
   "scripts": {
-    "dev": "node init && pnpm build",
-    "build": "node init && swc -d dist src && pnpm types",
+    "dev": "pnpm build",
+    "build": "swc -d dist src && pnpm types",
     "types": "tsc --skipLibCheck --declaration --emitDeclarationOnly --esModuleInterop --declarationDir dist --rootDir src",
     "pack-for-isolated-tests": "pnpm pack --out ./packed.tgz"
   },

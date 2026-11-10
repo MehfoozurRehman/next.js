@@ -17,7 +17,7 @@
   "scripts": {
     "lint": "eslint src/",
     "test": "node --import tsx --test src/**/*-test.ts",
-    "build": "node init && tsc"
+    "build": "tsc"
   },
   "files": [
     "dist"

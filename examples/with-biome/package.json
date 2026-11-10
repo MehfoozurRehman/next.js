@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "node init && next dev --turbopack",
-    "build": "node init && biome check && next build",
-    "start": "node init && next start",
+    "dev": "next dev --turbopack",
+    "build": "biome check && next build",
+    "start": "next start",
     "check": "biome check"
   },
   "dependencies": {

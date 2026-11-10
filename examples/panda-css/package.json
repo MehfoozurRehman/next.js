@@ -2,9 +2,9 @@
   "private": true,
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "node init && next dev",
-    "build": "node init && next build",
-    "start": "node init && next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "eslint ."
   },
   "dependencies": {

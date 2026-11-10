@@ -1,12 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "node init && next dev",
-    "build": "node init && next build",
-    "start": "node init && next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "node init && storybook build"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "14.2.2",
